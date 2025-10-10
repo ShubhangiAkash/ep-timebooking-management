@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: ep-timebooking-management
+
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      auto-offset-reset: earliest
+      enable-auto-commit: false
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+
+kafka:
+  consumer:
+    groupId: employee-details
+  topics:
+    employee-details-v1: employee-details-v1
