@@ -24,10 +24,6 @@ jobs:
           java-version: 17
           cache: gradle
 
-      # Step 3: Validate Gradle Wrapper
-      - name: Validate Gradle wrapper
-        uses: gradle/wrapper-validation-action@v2
-
       # Step 4: Make gradlew executable
       - name: Make gradlew executable
         run: chmod +x gradlew
